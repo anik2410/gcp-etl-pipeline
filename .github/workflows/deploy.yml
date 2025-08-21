@@ -34,16 +34,16 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - name: Terraform Init
-        run:
+        run: |
           cd terraform 
           terraform init
 
       - name: Terraform Plan
-        run:
+        run: |
           cd terraform 
           terraform plan
 
       - name: Terraform Apply
-        run:
+        run: |
           cd terraform 
           terraform apply -auto-approve
